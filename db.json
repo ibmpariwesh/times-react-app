@@ -9,6 +9,18 @@
       "firstname": "Ram",
       "age": 20,
       "id": 2
+    },
+    {
+      "firstname": "Ram",
+      "age": 20,
+      "joiningDate": "2021-07-22",
+      "id": 3
+    },
+    {
+      "firstname": "Ram",
+      "age": 20,
+      "joiningDate": "2021-07-22",
+      "id": 4
     }
   ]
 }

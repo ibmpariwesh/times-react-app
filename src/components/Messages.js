@@ -1,5 +1,3 @@
-
-
 export default function Messages(props) {
     let css;
     if (!props.message) {
@@ -12,7 +10,5 @@ export default function Messages(props) {
         <div className={css}>
             {props.message?.text}
         </div>
-
-
     )
 }

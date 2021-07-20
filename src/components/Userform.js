@@ -39,8 +39,8 @@ export default function Userform() { //stateful
             <div className="form-group">
                 <input type='date' className="form-control" name='joiningDate' value={userform.joiningDate} onChange={handleEvent}></input>
             </div>
-            <select name='skill' onChange={handleSelection} >
-                <option selected>Select the skill</option>
+            <select value='default'  className='dropdown' name='skill' onChange={handleSelection} >
+                <option value='default'>Select the skill</option>
                 <option value='HTML'>HTML</option>
                 <option value='CSS'>CSS</option>
                 <option value='React'>React</option>

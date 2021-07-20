@@ -1,11 +1,13 @@
 import axios from "axios";
 import { useState } from "react"
 import Button from 'react-bootstrap/Button';
+import Messages from "./Messages";
 export default function Userform() { //stateful
     const [userform, setUserform] = useState({
         firstname: "Ram",
         age: 20
     }); //hook -function
+    const [message, setMessage] = useState();
     const handleEvent = function (event) {
         console.log(event);
         setUserform({ ...userform, [event.target.name]: event.target.value })
@@ -16,7 +18,11 @@ export default function Userform() { //stateful
         const promise = axios.post("http://localhost:4200/users", userform);
         promise.then(function (response) {
             console.log(response);
+            setMessage({...message, type: 'success', text: "Record was saved"})
         });
+        promise.catch(function (error) {
+            setMessage({...message, type: 'error', text: "Record was not saved" });
+        })
     }
     const handleSelection = function (event) {
         setUserform({ ...userform, [event.target.name]: event.target.value })
@@ -24,6 +30,7 @@ export default function Userform() { //stateful
     return (//JSX
         <div>
             <h3>Create User</h3>
+            <Messages message={message}></Messages>
             <div className="form-group">
                 <input placeholder='First Name' className="form-control" name='firstname' value={userform.firstname} onChange={handleEvent}></input>
             </div>

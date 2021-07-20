@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react"
+import Counter from "./Counter";
 
 export default function Userlist() {
     const [users, setUsers] = useState([]);
@@ -12,7 +13,7 @@ export default function Userlist() {
         promise.then(response => setUsers(response.data))
     })
     return (
-        <div>
+        <div><Counter count={users.length}></Counter>
             <table className=' table table-bordered table-hover table-responsive table-striped'>
                 <thead>
                     <tr><th>First name</th>

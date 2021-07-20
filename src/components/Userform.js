@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react"
 import Button from 'react-bootstrap/Button';
-export default function Userform() {
+export default function Userform() { //stateful
     const [userform, setUserform] = useState({
         firstname: "Ram",
         age: 20
@@ -41,5 +41,4 @@ export default function Userform() {
             <Button className="form-control" onClick={save}>Save</Button>
         </div >
     )
-
 }

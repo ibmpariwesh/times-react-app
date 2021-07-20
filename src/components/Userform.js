@@ -18,11 +18,11 @@ export default function Userform() {
             console.log(response);
         });
     }
-    return (
+    return (//JSX
         <div>
             <h3>Create User</h3>
-            <input name='firstname' value={userform.firstname} onChange={handleEvent}></input>
-            <input name='age' value={userform.age} onChange={handleEvent}></input>
+            <input placeholder='First Name' name='firstname' value={userform.firstname} onChange={handleEvent}></input>
+            <input placeholder='Age' type='number' name='age' value={userform.age} onChange={handleEvent}></input>
             joining date: <input type='date' name='joiningDate' value={userform.joiningDate} onChange={handleEvent}></input> 
             <button onClick={save}>Save</button>
         </div>

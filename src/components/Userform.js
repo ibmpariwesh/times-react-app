@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react"
 import Button from 'react-bootstrap/Button';
+import { getAllskills } from "../service";
 import Messages from "./Messages";
 export default function Userform() { //stateful
     const [userform, setUserform] = useState({
@@ -14,8 +15,7 @@ export default function Userform() { //stateful
         setUserform({ ...userform, [event.target.name]: event.target.value })
     }
     useEffect(function () {
-        axios.get(process.env.REACT_APP_SKILLS_URL)
-            .then(response => setSkills(response.data));
+            getAllskills(response => setSkills(response.data));
     }, []);
     const save = function (event) {
         const promise = axios.post(process.env.REACT_APP_SERVER_URL, userform);
@@ -43,7 +43,7 @@ export default function Userform() { //stateful
             </div>
             <select className='dropdown' name='skill' onChange={handleSelection} >
                 <option defaultValue >Select the skill</option>
-                {skills.map((skill, index)=> <option value={skill}>{skill}</option>)}
+                {skills.map((skill, index)=> <option value={skill} key={skill}>{skill}</option>)}
             </select>
             <Button className="form-control" onClick={save}>Save</Button>
         </div >

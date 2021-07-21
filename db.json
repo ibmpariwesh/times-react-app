@@ -3,24 +3,133 @@
     {
       "firstname": "Ram",
       "age": 20,
-      "id": 1
+      "skill": "React",
+      "id": 10
     },
     {
       "firstname": "Ram",
       "age": 20,
-      "id": 2
+      "skill": "React",
+      "id": 16
     },
     {
       "firstname": "Ram",
       "age": 20,
-      "joiningDate": "2021-07-22",
-      "id": 3
+      "skill": "React",
+      "id": 17
     },
     {
       "firstname": "Ram",
       "age": 20,
-      "joiningDate": "2021-07-22",
-      "id": 4
+      "skill": "React",
+      "id": 18
+    },
+    {
+      "firstname": "Ram",
+      "age": 20,
+      "skill": "React",
+      "id": 19
+    },
+    {
+      "firstname": "Ram",
+      "age": 20,
+      "skill": "React",
+      "id": 20
+    },
+    {
+      "firstname": "Ram",
+      "age": 20,
+      "skill": "React",
+      "id": 21
+    },
+    {
+      "firstname": "Ram",
+      "age": 20,
+      "skill": "React",
+      "id": 22
+    },
+    {
+      "firstname": "Ram",
+      "age": 20,
+      "skill": "React",
+      "id": 23
+    },
+    {
+      "firstname": "Ram",
+      "age": 20,
+      "skill": "React",
+      "id": 24
+    },
+    {
+      "firstname": "Ram",
+      "age": 20,
+      "skill": "React",
+      "id": 25
+    },
+    {
+      "firstname": "Ram",
+      "age": 20,
+      "skill": "React",
+      "id": 26
+    },
+    {
+      "firstname": "Ram",
+      "age": 20,
+      "skill": "React",
+      "id": 27
+    },
+    {
+      "firstname": "Ram",
+      "age": 20,
+      "skill": "React",
+      "id": 28
+    },
+    {
+      "firstname": "Ram",
+      "age": 20,
+      "skill": "React",
+      "id": 29
+    },
+    {
+      "firstname": "Ram",
+      "age": 20,
+      "skill": "React",
+      "id": 30
+    },
+    {
+      "firstname": "Ram",
+      "age": 20,
+      "skill": "React",
+      "id": 31
+    },
+    {
+      "firstname": "Ram",
+      "age": 20,
+      "skill": "React",
+      "id": 32
+    },
+    {
+      "firstname": "Ram",
+      "age": 20,
+      "skill": "React",
+      "id": 33
+    },
+    {
+      "firstname": "Ram",
+      "age": 20,
+      "skill": "React",
+      "id": 34
+    },
+    {
+      "firstname": "Ram",
+      "age": 20,
+      "id": 35
     }
+  ],
+  "skills": [
+    "HTML",
+    "CSS",
+    "React",
+    "Javascript", "Angular"
   ]
 }

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing using snapshot 1`] = `
+<DocumentFragment>
+  <span>
+    5
+  </span>
+</DocumentFragment>
+`;
+
+exports[`testing using snapshot with count=10 1`] = `
+<DocumentFragment>
+  <span>
+    10
+  </span>
+</DocumentFragment>
+`;

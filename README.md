@@ -1,1 +1,6 @@
-1. redux, delete, sorting, routing
+1. redux, unit testing, 
+Assessment : 4-5 hours 
+
+
+
+ npm test -- --coverage

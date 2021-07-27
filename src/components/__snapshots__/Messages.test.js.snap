@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`No message prop 1`] = `
+<DocumentFragment>
+  <div
+    class="hidden"
+  />
+</DocumentFragment>
+`;
+
+exports[`first test for message component 1`] = `
+<DocumentFragment>
+  <div
+    class="alert alert-success"
+  />
+</DocumentFragment>
+`;
+
+exports[`first test for message component 2`] = `
+<DocumentFragment>
+  <div
+    class="alert alert-success"
+  />
+</DocumentFragment>
+`;
